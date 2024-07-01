@@ -1,6 +1,6 @@
 <?php
 
-namespace M2S\LaravelNuxt\Exceptions;
+namespace Webazin\LaravelNuxt\Exceptions;
 
 use Illuminate\Support\Facades\App;
 

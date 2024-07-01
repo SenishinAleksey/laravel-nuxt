@@ -1,6 +1,6 @@
 <?php
 
-namespace M2S\LaravelNuxt\Console\Commands;
+namespace Webazin\LaravelNuxt\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -76,7 +76,7 @@ class InstallCommand extends Command
 Current setting: '$prefixConfig'
 Please make sure to publish configuration and to adjust the 'prefix' setting accordingly.");
             $this->output->write('Publish command: ');
-            $this->comment('php artisan vendor:publish --provider="M2S\\LaravelNuxt\\LaravelNuxtServiceProvider"');
+            $this->comment('php artisan vendor:publish --provider="Webazin\\LaravelNuxt\\LaravelNuxtServiceProvider"');
         }
     }
 
