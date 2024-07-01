@@ -1,5 +1,5 @@
 {
-    "name": "m2s/laravel-nuxt",
+    "name": "webazin/laravel-nuxt",
     "description": "NuxtJS framework integration for Laravel",
     "version": "1.2.0",
     "type": "library",
@@ -14,14 +14,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Michael Marcenich",
-            "email": "info@m-squared-solutions.it"
+            "name": "webazin",
+            "email": "info@webazin.net"
         }
     ],
     "support": {
-        "email": "info@m-squared-solutions.it",
-        "issues": "https://github.com/m2sd/laravel-nuxt/issues",
-        "source": "https://github.com/m2sd/laravel-nuxt"
+        "email": "info@webazin.net",
+        "issues": "https://github.com/webazin/laravel-nuxt/issues",
+        "source": "https://github.com/webazom/laravel-nuxt"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -59,10 +59,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "M2S\\LaravelNuxt\\LaravelNuxtServiceProvider"
+                "Webazin\\LaravelNuxt\\LaravelNuxtServiceProvider"
             ],
             "aliases": {
-                "Nuxt": "M2S\\LaravelNuxt\\Facades\\Nuxt"
+                "Nuxt": "Webazin\\LaravelNuxt\\Facades\\Nuxt"
             }
         }
     }
