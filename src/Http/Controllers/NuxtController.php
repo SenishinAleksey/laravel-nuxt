@@ -1,10 +1,10 @@
 <?php
 
-namespace Webazin\LaravelNuxt\Http\Controllers;
+namespace SenishinAleksey\LaravelNuxt\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Webazin\LaravelNuxt\Exceptions\InvalidConfigurationException;
+use SenishinAleksey\LaravelNuxt\Exceptions\InvalidConfigurationException;
 
 class NuxtController
 {
@@ -40,7 +40,7 @@ class NuxtController
 
     protected function checkSsrSource(string $source): bool
     {
-        if (!filter_var($source, FILTER_VALIDATE_URL)) {
+        if (! filter_var($source, FILTER_VALIDATE_URL)) {
             throw new InvalidConfigurationException(sprintf('Found invalid source for ssr mode: %s', $source));
         }
 

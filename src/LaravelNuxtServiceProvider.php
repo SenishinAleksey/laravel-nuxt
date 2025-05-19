@@ -1,9 +1,9 @@
 <?php
 
-namespace Webazin\LaravelNuxt;
+namespace SenishinAleksey\LaravelNuxt;
 
 use Illuminate\Support\ServiceProvider;
-use Webazin\LaravelNuxt\Console\Commands\InstallCommand;
+use SenishinAleksey\LaravelNuxt\Console\Commands\InstallCommand;
 
 class LaravelNuxtServiceProvider extends ServiceProvider
 {

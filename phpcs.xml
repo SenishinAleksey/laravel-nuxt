@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ruleset name="Webazin-laravel-default">
+<ruleset name="SenishinAleksey-laravel-default">
     <description>Default ruleset used for laravel projects</description>
 
     <exclude-pattern>*/vendor/*</exclude-pattern>

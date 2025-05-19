@@ -1,6 +1,6 @@
 <?php
 
-namespace Webazin\LaravelNuxt\Exceptions;
+namespace SenishinAleksey\LaravelNuxt\Exceptions;
 
 use Illuminate\Support\Facades\App;
 
@@ -19,8 +19,7 @@ class InvalidConfigurationException extends \Exception
     /**
      * Render the exception into an HTTP response.
      *
-     * @param \Illuminate\Http\Request $request
-     *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function render()

@@ -1,9 +1,9 @@
 <?php
 
-namespace Webazin\LaravelNuxt\Facades;
+namespace SenishinAleksey\LaravelNuxt\Facades;
 
 use Illuminate\Support\Facades\Route;
-use Webazin\LaravelNuxt\Http\Controllers\NuxtController;
+use SenishinAleksey\LaravelNuxt\Http\Controllers\NuxtController;
 
 class Nuxt
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webazin\LaravelNuxt\Console\Commands;
+namespace SenishinAleksey\LaravelNuxt\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -76,17 +76,17 @@ class InstallCommand extends Command
 Current setting: '$prefixConfig'
 Please make sure to publish configuration and to adjust the 'prefix' setting accordingly.");
             $this->output->write('Publish command: ');
-            $this->comment('php artisan vendor:publish --provider="Webazin\\LaravelNuxt\\LaravelNuxtServiceProvider"');
+            $this->comment('php artisan vendor:publish --provider="SenishinAleksey\\LaravelNuxt\\LaravelNuxtServiceProvider"');
         }
     }
 
     protected function installNuxtRemote(string $source, bool $yarn)
     {
-        if (!file_exists($source)) {
+        if (! file_exists($source)) {
             mkdir($source, 0777, true);
         }
 
-        if (2 === count(scandir($source))) {
+        if (count(scandir($source)) === 2) {
             passthru(
                 ($yarn ? 'yarn create ' : 'npx create-').'nuxt-app '.$source
             );
@@ -121,11 +121,11 @@ Please make sure to publish configuration and to adjust the 'prefix' setting acc
         $config = view(
             'nuxt::config',
             [
-                'source'     => $source,
-                'prefix'     => $prefix,
+                'source' => $source,
+                'prefix' => $prefix,
                 'typescript' => $typescript,
-                'cache'      => trim($this->option('cache'), '/'),
-                'export'     => !$this->option('no-export'),
+                'cache' => trim($this->option('cache'), '/'),
+                'export' => ! $this->option('no-export'),
             ]
         )->render();
 
@@ -160,13 +160,13 @@ Please compare the files and configure typescript appropriately.");
         $nuxt = $typescript ? 'nuxt-ts' : 'nuxt';
 
         $scripts = [
-            'dev'      => $nuxt,
-            'build'    => $nuxt.' build',
+            'dev' => $nuxt,
+            'build' => $nuxt.' build',
             'generate' => $nuxt.' generate',
-            'start'    => $nuxt.' start',
+            'start' => $nuxt.' start',
         ];
 
-        if (!isset($package['scripts'])) {
+        if (! isset($package['scripts'])) {
             $package['scripts'] = [];
         }
 

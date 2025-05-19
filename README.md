@@ -1,17 +1,17 @@
-# NuxtJS for Laravel
+# NuxtJS for Laravel 12
 
 This package facilitates integrating an SPA built with NuxtJS into an existing Laravel project.
 
 ## Installation
 
 ```sh
-composer require Webazin/laravel-nuxt
+composer require senishinaleksey/laravel-nuxt
 ```
 
 After installation you can publish the config.
 
 ```sh
-php artisan vendor:publish --provider="Webazin\LaravelNuxt\LaravelNuxtServiceProvider"
+php artisan vendor:publish --provider="SenishinAleksey\LaravelNuxt\LaravelNuxtServiceProvider"
 ```
 
 ## Setup
@@ -73,7 +73,7 @@ In `routes/web.php`:
 
 ```php
 
-use Webazin\LaravelNuxt\Facades\Nuxt;
+use SenishinAleksey\LaravelNuxt\Facades\Nuxt;
 
 Nuxt::route('example/route')->name('nuxt.example');
 ```
