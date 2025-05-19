@@ -1,7 +1,7 @@
 {
-    "name": "webazin/laravel-nuxt",
-    "description": "NuxtJS framework integration for Laravel",
-    "version": "1.2.0",
+    "name": "senishinaleksey/laravel-nuxt",
+    "description": "NuxtJS framework integration for Laravel 12",
+    "version": "1.0.1",
     "type": "library",
     "keywords": [
         "laravel",
@@ -14,14 +14,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "webazin",
-            "email": "info@webazin.net"
+            "name": "SenishinAleksey",
+            "email": "ccrko60@gmail.com"
         }
     ],
     "support": {
-        "email": "info@webazin.net",
-        "issues": "https://github.com/webazin/laravel-nuxt/issues",
-        "source": "https://github.com/webazom/laravel-nuxt"
+        "email": "ccrko60@gmail.com",
+        "issues": "https://github.com/SenishinAleksey/laravel-nuxt/issues",
+        "source": "https://github.com/SenishinAleksey/laravel-nuxt"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -53,16 +53,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Webazin\\LaravelNuxt\\": "src/"
+            "SenishinAleksey\\LaravelNuxt\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webazin\\LaravelNuxt\\LaravelNuxtServiceProvider"
+                "SenishinAleksey\\LaravelNuxt\\LaravelNuxtServiceProvider"
             ],
             "aliases": {
-                "Nuxt": "Webazin\\LaravelNuxt\\Facades\\Nuxt"
+                "Nuxt": "SenishinAleksey\\LaravelNuxt\\Facades\\Nuxt"
             }
         }
     }
